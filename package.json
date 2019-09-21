@@ -1,0 +1,59 @@
+{
+  "name": "faked-promise",
+  "version": "2.1.0",
+  "description": "Create a promise that can be resolved and rejected outside of it",
+  "main": "index.js",
+  "author": {
+    "name": "Eduardo San Martin Morote",
+    "email": "posva13@gmail.com"
+  },
+  "scripts": {
+    "lint": "eslint --color --ext=js,html index.js test",
+    "unit": "jest",
+    "dev": "npm run unit -- --watchAll",
+    "test": "npm run lint && npm run unit"
+  },
+  "files": [
+    "index.js",
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "fake",
+    "faked",
+    "promised",
+    "generate",
+    "create",
+    "on",
+    "flow",
+    "custom",
+    "control",
+    "resolvable",
+    "rejectable",
+    "demand"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "codecov": "^3.3.0",
+    "eslint": "^6.1.0",
+    "eslint-config-posva": "^3.0.1",
+    "jest": "^24.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/posva/faked-promise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/posva/faked-promise/issues"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/test/*.js",
+      "<rootDir>/test/.*.js",
+      "<rootDir>/test/*/*.js"
+    ]
+  },
+  "homepage": "https://github.com/posva/faked-promise#readme"
+}
